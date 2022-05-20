@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML SEMANTICS</title>
+  <style>
+    #container {
+      margin-top: 10px !important;
+      max-height: 60vh;
+      max-width: 50vw;
+      margin-top: -14px;
+      justify-content: space-around;
+      background: #f7f6f0;
+      box-shadow: 0px 3px 0px 0px rgb(45, 43, 43);
+    }
+    .header {
+      width: 100%;
+      background: #444444;
+      color: #b7b6b2;
+      text-align: center;
+    }
+    .header_content {
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+    .content-header {
+      letter-spacing: 2px;
+      font-size: 29px;
+    }
+    .question-box {
+      justify-content: center;
+      color: rgb(67, 61, 61);
+    }
+    .answers {
+      font-size: 19px;
+      margin-top: -20px;
+    }
+    .button-container {
+      background: transparent;
+      width: 60%;
+      margin: 70px;
+    }
+    /* UTILITY CLASSES */
+    .flex-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .btn {
+      padding: 17px 29px;
+      font-size: 18px;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      background-color:#297e96;
+    }
+    .btn:hover {
+      background-color: #398da4;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main id="main">
+    <div id="container" class="flex-col">
+      <div class="header">
+        <p class="header_content">Quiz on Important Facts</p>
+      </div>
+      <div class="flex-col question-box">
+        <p class="content-header">Which one of these is a JavaScript manager</p>
+        <div class="answers">
+          <input type="radio" id="a" name="selected_answer" value="">
+          <label for="a">a : Node.js</label><br>
+          <input type="radio" id="b" name="selected_answer" value="">
+          <label for="b">b : TypeScript</label><br>
+          <input type="radio" id="c" name="selected_answer" value="">
+          <label for="c">c : npm</label><br>
+        </div>
+      </div>
+      <div class="flex-row button-container">
+        <button class="btn">Previous Question</button>
+        <button class="btn">Next Question</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
